@@ -14,9 +14,6 @@ int main()
 		if (y <= 0) {
 			y = y * (-1);
 		}
-		if (max <= 0) {
-			max = max * (-1);
-		}
 		if (max < y) {
 			max = y;
 		}
