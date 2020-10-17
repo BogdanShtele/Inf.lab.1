@@ -1,0 +1,49 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int
+main()
+{
+	float b, a, k, x;
+	int n, i;
+	
+	n = 0;
+	printf("Vvedite n: " );  
+	scanf("%d", &n);
+	
+	if (n != 0)
+		{
+		 a = 0, b = 0, i = 0;
+           while (i != n)
+			{
+			   x = 0;
+			    printf("Vvedite x: " ); 
+			   while (scanf("%f", &x) == 0)
+			   {
+				   printf("Vvedite chisla");
+				   return 0;
+			   }
+				if (x != 0)
+				{
+					a = 1 / x;
+					b = b + a;
+					i++;
+				}
+				else
+				{
+					printf("error, ");
+				}
+			}
+		k = n / b;
+		printf( "%f",  k);
+		 }
+	else
+	{
+		printf("error");
+	}
+
+    
+	return 0;
+
+
+}
